@@ -1,0 +1,659 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital@0;1&display=swap");
+
+/*ELEMENTOS BASE DA PÁGINA*/
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gentium Book Basic", serif;
+  margin: 0 auto;
+  width: 100%;
+  display: 100%;
+  background: rgb(238, 235, 235);
+  color: #fff;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.conteudo-central {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+
+/* SLIDER SHOW PRINCIPAL */
+.slidershow {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 770px;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.slide.current {
+  opacity: 1;
+}
+
+button {
+  opacity: 0.9;
+}
+
+button#ant {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  height: 6%;
+  width: 40px;
+}
+
+button#prox {
+  position: absolute;
+  top: 44.2%;
+  left: 20%;
+  height: 6%;
+  width: 40px;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+.botoes button {
+  border: 1.5px solid #fff;
+  background-color: orangered;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.botoes button:hover {
+  background-color: orangered;
+  color: #333;
+  opacity: 1;
+}
+
+.conteudo-slide {
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: orangered;
+}
+
+.conteudo-slide h1,
+h4 {
+  text-shadow: 1px 1px 1px black;
+}
+
+.slide:first-child {
+  background: url(./imgs/foto1.png) no-repeat center center/cover;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.slide:nth-child(2) {
+  background: url(./imgs/foto2.png) no-repeat center top/cover;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.slide:nth-child(3) {
+  background: url(./imgs/foto3.png) no-repeat center top/cover;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.slide:nth-child(4) {
+  background: url(./imgs/foto4.png) no-repeat center top/cover;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.slide:nth-child(5) {
+  background: url(./imgs/foto5.png) no-repeat center top/cover;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+/*LOGO E TÍTULOS DE CADA SEÇÂO*/
+
+.logo {
+  margin-left: 2%;
+  width: 200px;
+}
+
+.logo-secundaria {
+  color: black;
+}
+.card-logo {
+  margin-top: -50px;
+}
+
+.logo-secundaria img {
+  max-width: 150px;
+  margin: 0 auto;
+}
+
+.logo-secundaria h3 {
+  background-color: goldenrod;
+  width: 27%;
+  box-shadow: 1px 1px 1px gold;
+  margin: 0 auto;
+  border-radius: 4px;
+  color: #fff;
+}
+
+/* CONTEUDO APRESENTAÇÃO*/
+.fundo-black {
+  width: 100%;
+  height: 820px;
+  background-image: url(./imgs/black.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+}
+
+.fundo-black > h1 {
+  padding-top: 35px;
+  text-align: center;
+}
+
+.conteudo-principal {
+  margin: 0 auto;
+  width: 60%;
+  display: flex;
+}
+
+.conteudo-principal p {
+  width: 80%;
+  min-width: 300px;
+  padding: 8px;
+}
+
+.conteudo-principal img {
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 50%;
+  margin-top: 200px;
+  box-shadow: 2px 2px 2px orangered;
+}
+
+.titulo-principal {
+  border-left: 4px solid orangered;
+  margin-bottom: 40px;
+  margin-top: 120px;
+}
+
+.titulo-principal h1,
+h3 {
+  padding-left: 9px;
+}
+
+/*------Seção de esportes com CARDS------*/
+
+.secao-esportes {
+  border-top: 1px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 500px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.box {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.box:hover {
+  height: 400px;
+}
+
+.box .imgBx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: #060c21;
+}
+
+.box .imgBx img {
+  max-width: 100%;
+  opacity: 0.4;
+  transition: 0.5;
+}
+
+.box:hover .imgBx img {
+  opacity: 1;
+}
+
+.box:before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -2;
+}
+
+.box:after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -2;
+  filter: blur(40px);
+}
+
+.box .content {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  height: 90px;
+  background: rgba(0, 0, 0, 0, 0.4);
+  align-items: center;
+  opacity: 0;
+  transition: 0.5s;
+  text-align: center;
+}
+
+.box:hover .content {
+  opacity: 1;
+}
+
+.box .content h2 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+.box .content h2 span {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+/*ALBum de fotos com CARDS */
+
+.album {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-album {
+  width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+  color: black;
+}
+
+.container-album .card-album {
+  max-width: 300px;
+  height: 425px;
+  background: #fff;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+
+.container-album .card-album:hover {
+  height: 420px;
+}
+
+.container-album .card-album .img-album {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  top: -60px;
+  margin: 0 auto;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.container-album .card-album .img-album img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.container-album .card-album .conteudo-card {
+  position: relative;
+  margin-top: -100px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #111;
+  transition: 0.3s ease-in-out;
+}
+
+.container-album .card-album:hover .conteudo-card {
+  visibility: visible;
+  margin-top: -40px;
+  transition-delay: 0.2s;
+}
+
+/*RODAPÉ*/
+footer {
+  border-top: 8px solid black;
+  color: black;
+}
+
+.rodape {
+  opacity: 0.9;
+}
+
+.menu-rodape {
+  padding: 60px;
+}
+
+.menu-rodape h3 {
+  background-color: goldenrod;
+  width: 27%;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+.menu-rodape p {
+  margin-top: 20px;
+  font-size: 10pt;
+}
+
+.texto-contato {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: -40px;
+}
+
+.texto-contato input {
+  background: transparent;
+  color: black;
+}
+
+.texto-contato1 input {
+  width: 55%;
+  height: 40px;
+  margin-top: 30px;
+  padding-left: 10px;
+}
+
+.texto-contato2 input {
+  width: 88.6%;
+  height: 110px;
+  margin-top: 30px;
+}
+
+textarea {
+  width: 70%;
+  color: black;
+  background: transparent;
+  margin-top: 28px;
+  padding-bottom: 70px;
+  padding-left: 20px;
+  font-size: 15pt;
+  border: 2px solid grey;
+}
+
+#botao_enviar {
+  background-color: gold;
+  width: 80%;
+  height: 40px;
+  margin-top: 30px;
+  border: none;
+}
+
+.texto-contato3 p {
+  margin-top: 30px;
+}
+
+.texto-contato3 img {
+  width: 50px;
+  margin-left: 47%;
+}
+
+h4 {
+  margin-top: 20px;
+}
+
+/* RESPONSIVE */
+
+@media (min-width: 0px) and (max-width: 600px) {
+  button#ant,
+  button#prox,
+  button#explorar,
+  .slidershow {
+    display: none;
+  }
+
+  .logo-secundaria h3 {
+    width: 90%;
+  }
+
+  .texto-contato input {
+    width: 70%;
+  }
+}
+
+@media (max-width: 930px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  button#ant,
+  button#prox,
+  button#explorar,
+  .slidershow,
+  .conteudo-principal img {
+    display: none;
+  }
+
+  /*CONTEUDO*/
+  .fundo-black {
+  }
+
+  .fundo-black > h1 {
+  }
+
+  .conteudo-principal {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: -70px;
+  }
+
+  .conteudo-principal p {
+    margin: 0 auto;
+    min-width: 240px;
+  }
+
+  .titulo-principal {
+  }
+
+  .titulo-principal h1,
+  h3 {
+  }
+
+  /*MENU*/
+  header {
+    background-color: #010615;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 1rem;
+    box-shadow: 0px 2px 15px -9px red;
+  }
+
+  .menu {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: #222d32;
+    left: -100%;
+    z-index: 2;
+    transition: 0.4s;
+  }
+
+  nav ul li {
+    margin-bottom: 3px;
+    background-color: #2f3e46;
+  }
+
+  nav ul li a {
+    color: #fff;
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .menu__move {
+    left: 0;
+  }
+
+  .burger {
+    cursor: pointer;
+  }
+
+  .burger div {
+    width: 25px;
+    height: 3px;
+    color: #fff;
+    margin: 5px;
+    background: #fff;
+  }
+
+  .xxx {
+    cursor: pointer;
+    display: none;
+    font-size: 30pt;
+  }
+
+  /*FOOTER */
+
+  .texto-contato3 {
+    color: black;
+  }
+
+  .texto-contato {
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr;
+    color: black;
+  }
+
+  .texto-contato textarea {
+    width: 53.5%;
+  }
+
+  .menu-rodape > h3 {
+    width: 70%;
+    background-color: goldenrod;
+  }
+}
+
+@media (min-width: 931px) {
+  header {
+    background-color: #010615;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 1rem;
+  }
+
+  .menu {
+    background-color: #010615;
+    color: #fff;
+    margin: 0 auto;
+    height: 40px;
+    border-top: 1px solid goldenrod;
+    box-shadow: 0px 2px 15px -9px goldenrod;
+  }
+
+  nav ul {
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  nav ul li {
+    list-style: none;
+    margin: 0 auto;
+  }
+
+  nav ul li:hover {
+    background-color: #030b22;
+    border-bottom: 2px solid grey;
+  }
+
+  nav ul li a {
+    padding: 4px;
+    font-size: 15pt;
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  .patrocinadores {
+    margin-left: 600px;
+  }
+}
