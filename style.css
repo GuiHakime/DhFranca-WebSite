@@ -156,6 +156,7 @@ h4 {
 .logo-secundaria {
   color: black;
 }
+
 .card-logo {
   margin-top: -50px;
 }
@@ -185,7 +186,7 @@ h4 {
   opacity: 0.9;
 }
 
-.fundo-black > h1 {
+.fundo-black>h1 {
   padding-top: 35px;
   text-align: center;
 }
@@ -475,6 +476,7 @@ h4 {
 /* RESPONSIVE */
 
 @media (min-width: 0px) and (max-width: 600px) {
+
   button#ant,
   button#prox,
   button#explorar,
@@ -505,11 +507,6 @@ h4 {
   }
 
   /*CONTEUDO*/
-  .fundo-black {
-  }
-
-  .fundo-black > h1 {
-  }
 
   .conteudo-principal {
     display: grid;
@@ -522,12 +519,7 @@ h4 {
     min-width: 240px;
   }
 
-  .titulo-principal {
-  }
 
-  .titulo-principal h1,
-  h3 {
-  }
 
   /*MENU*/
   header {
@@ -603,7 +595,7 @@ h4 {
     width: 53.5%;
   }
 
-  .menu-rodape > h3 {
+  .menu-rodape>h3 {
     width: 70%;
     background-color: goldenrod;
   }
