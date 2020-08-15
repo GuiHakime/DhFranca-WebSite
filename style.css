@@ -120,30 +120,44 @@ h4 {
   background: url(./imgs/foto1-min.png) no-repeat center center/cover;
   height: 100vh;
   background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 }
 
 .slide:nth-child(2) {
   background: url(./imgs/foto2-min.png) no-repeat center top/cover;
   height: 100vh;
   background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
 }
 
 .slide:nth-child(3) {
-  background: url(./imgs/foto3-min.png) no-repeat center top/cover;
+  background: url(imgs/foto3-min.png) no-repeat center top/cover;
   height: 100vh;
   background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
 }
 
 .slide:nth-child(4) {
-  background: url(./imgs/foto4-min.png) no-repeat center top/cover;
+  background: url(imgs/foto4-min.png) no-repeat center top/cover;
   height: 100vh;
   background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
 }
 
 .slide:nth-child(5) {
-  background: url(./imgs/foto5-min.png) no-repeat center top/cover;
+  background: url(imgs/foto5-min.png) no-repeat center top/cover;
   height: 100vh;
   background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
 }
 
 /*LOGO E TÍTULOS DE CADA SEÇÂO*/
